@@ -43,7 +43,11 @@
           },
           handleSubmit: function(e) {
               e.preventDefault();
-              var comment = this.state.inputValue;
+	      var comment = this.state.inputValue;
+	      if(this.state.inputValue=="コメント")
+	      {
+	      comment="難しかったです。"
+	      }
               this.setState({
                   comments: this.state.comments.concat(comment),
                   inputValue: ''
