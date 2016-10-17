@@ -34,7 +34,10 @@
               );
           }
       });
-
+	if(value=="コメント")
+			    {
+			    this.state.inputValue="あああああ"
+			    }
       var CommentApp = React.createClass({
           getInitialState: function() {
               return {
@@ -63,10 +66,6 @@
                       onSubmit={this.handleSubmit} >
                       <ons-row align = "center">
                         <ons-col width="60%" align = "center">
-			if(value=="コメント")
-			    {
-			    this.state.inputValue="あああああ"
-			    }
                           <input class="text-input"
                             type="text"
                             value={this.state.inputValue}
